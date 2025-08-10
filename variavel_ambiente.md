@@ -76,15 +76,17 @@ N8N_BINARY_DATA_SIZE_LIMIT=50
 N8N_BINARY_DATA_TTL=3600
 N8N_USER_FOLDER=/tmp/n8n
 
+
 #######################################
-
-Configuração do RabbitMQ (modo fila)
-
+# Configuração do RabbitMQ (modo fila)
 #######################################
 
 N8N_QUEUE_MODE=rabbitmq
-N8N_QUEUE_RABBITMQ_HOST=n8n-rabbitmq.ALTERE.easypanel.host
+N8N_QUEUE_RABBITMQ_HOST=n8n-rabbitmq.dqoruq.easypanel.host
 N8N_QUEUE_RABBITMQ_PORT=5672
-N8N_QUEUE_RABBITMQ_USER=n8n
-N8N_QUEUE_RABBITMQ_PASSWORD=n8n
+N8N_QUEUE_RABBITMQ_USER=guest
+N8N_QUEUE_RABBITMQ_PASSWORD=guest
 N8N_QUEUE_RABBITMQ_VHOST=/
+
+# Habilitar site html via webhook
+N8N_INSECURE_DISABLE_WEBHOOK_IFRAME_SANDBOX=true
